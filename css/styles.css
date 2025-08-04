@@ -1,0 +1,238 @@
+
+/* GENERAL DESIGN */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quintessential", serif;
+    color: white;
+    background-color: #121518;
+}
+
+
+
+/*HEADER DESIGN */
+
+header {
+    background-color: #121518;
+    padding: 1rem 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    font-weight: 600;
+}
+
+ul li a:hover {
+    color: #ce909f;
+    text-decoration: underline;
+    transition: width 0.3s ease;
+}
+
+/* Basic navbar styles */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  position: relative;
+}
+
+/* Hide dropdown by default */
+.navbar .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px #00000033;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+/* Style dropdown items */
+.navbar .dropdown li {
+  width: 100%;
+}
+
+.navbar .dropdown a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.navbar .dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.navbar li:hover > .dropdown {
+  display: block;
+}
+
+
+.btn-primary {
+    background: #ce903f;
+    color: white;
+    border: none;
+    padding: 0.5rem 2.0vw;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Quintessential", serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #8f7553;
+}
+
+section{
+    background-color:white;
+    color: #ce903f;
+}
+
+
+
+/* FOOTER DESIGN */
+
+footer{
+    padding: 1.5rem 5vw;
+    padding-bottom: 0.5rem;
+    font-size: 1em;
+    color: grey;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    padding: 1rem 5vw;
+}
+
+.social-media{
+    padding: 0%;
+    margin: 0%;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-github{
+    background: black;
+    color: white;
+}
+
+
+
+/* INDEX PAGE DESIGN */
+
+.hero{
+    background-color: #ebdac5;
+    background-blend-mode: darken;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url("../images/DSCF2585-Ultra.JPG") top/contain no-repeat;
+}
+
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding: 4rem;
+    gap: 1rem;
+    height: 100vh;
+    font-size: 2rem;
+}
+
+.slogan{
+    padding: 1rem 5vw;
+    background-color: white;
+    color: #ce903f;
+    text-align: center;
+    line-height: 30px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 5vw;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-container-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    align-items: top;
+    text-align: left;
+}
+
+.grid-items img{
+    height: 200px;
+}
+
+#btn-secondary{
+    color: white;
+}
+
+
+
+/* PORTFOLIO PAGE */
+
+.my-journey,
+.my-approach,
+.skills-tools,
+.all-projects,
+.role-header{
+    padding: 1rem 5vw;
+}
+
+.role-header{
+    font-size: 1.5rem;
+}
+
+
+
