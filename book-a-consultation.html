@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEEJ - Homepage</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quintessential&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">
+                <h1><a href="./index.html">PEEJ</a></h1>
+            </div>
+
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Portfolio &#x25BE;</a>
+                            <ul class="dropdown">
+                                <li><a href="./learning-development.html">Learning Development</a></li>
+                                <li><a href="./ux-ui-design.html">UX/UI Design</a></li>
+                                <li><a href="./software-development.html">Software Development</a></li>
+                                <li><a href="./data-analytics.html">Data Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./about-me.html">About Me</a></li>
+                        <li><a href="./contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <button class="btn-primary"><a id="btn-primary" href="./book-a-consultation.html">Book a Consultation</a></button>
+            </div>
+        </header>
+
+        <section>
+            <div class="contact-form">
+
+                <div class="contact-form-image">
+
+                </div>
+
+                <h2 class="contact-form-text-1"> 
+                    Book a Consultation - I'd love to hear from you! </h2>
+
+                <p class="contact-form-text-2">
+                    Have a question, idea, or project in mind? Just fill out the form below, and I’ll get back to you as soon as possible.
+                </p>
+
+                <form method="post" action="https://formsubmit.co/consult@patrickedet.com" enctype="multipart/form-data">
+                    <input type="hidden" name="_subject" value="New submission! - General Inquiry">
+                    <input type="hidden" name="_autoresponse" value="Thank you for contacting us. We will get back to you shortly.">
+
+                    <div>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="Full-Name" id="full-name" placeholder="Your Fullname" required>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="Email" id="email" placeholder="Your Email Address" required>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" name="Phone" id="phone" placeholder="Your Phone Number">
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="location">Current Location</label>
+                        <input type="text" name="Location" id="location" placeholder="Your Current Location" required>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="contact-reason">Subject</label>
+                        <select class="contact-reason" name="Service">
+                            <option value="select-one"> --Please choose an option-- </option>
+                            <option value="learning-development">Learning Development</option>
+                            <option value="ux-ui-design">UX/UI Design</option>
+                            <option value="software-development">Software Development</option>
+                            <option value="business-analytics">Business Analytics</option>
+                        </select>
+                    </div>
+
+                    <div>             
+                        <label for="appointment-date">Select Date:</label>
+                        <input type="date" name="Requested-Date" id="appointment-date" name="appointment-date">
+                    </div>
+
+                    <div>
+                        <label for="appointment-time">Select Time:</label>
+                        <input type="time" name="Requested-Time" id="appointment-time" name="appointment-time">
+                    </div>
+
+                    <div>
+                        <label for="Additional-Info">Additional Comments</label>
+                        <textarea name="Additional-Info" id="Additional-Info"> </textarea>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
+                    <p class="contact-form-cta">
+                        <p>By submitting this form, you agree to the <a href="./terms-of-use.html" style="color: #0b0b42; text-decoration: underline;">Terms of Use</a> of this website.</p>
+ 
+                    </p>
+
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-text">© 2025 PEEJ. All rights reserved.</p> 
+                </div>
+            
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/patrick-edet-482837189/" target="_blank" class="fa fa-linkedin"></a> 
+                    <a href="https://github.com/patrick-edet" target="_blank" class="fa fa-github"></a>
+                </div>
+
+                <div>
+                    <p>
+                        Developed & Managed by <a href="http://www.patrickedet.com/" target="_blank">PEEJ </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
