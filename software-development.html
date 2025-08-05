@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PEEJ - Homepage</title>
+    <title>Patrick Edet - Software Development</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quintessential&display=swap" rel="stylesheet">
+</head>
 
 <body>
         <header>
             <div class="logo">
-                <h1>PEEJ</h1>
+                <h1><a href="./index.html">PEEJ</a></h1>
             </div>
 
             <div class="navbar">
@@ -24,24 +25,25 @@
                         <li><a href="#">Portfolio &#x25BE;</a>
                             <ul class="dropdown">
                                 <li><a href="./learning-development.html">Learning Development</a></li>
-                                <li><a href="./ux-ui-design.html">UX/UI Design</a></li>
+                                <li><a href="./ui-ux-design.html">UI/UX Design</a></li>
                                 <li><a href="./software-development.html">Software Development</a></li>
-                                <li><a href="./data-analytics.html">Data Analytics</a></li>
+                                <li><a href="./business-analytics.html">Business Analytics</a></li>
                             </ul>
                         </li>
                         <li><a href="./about-me.html">About Me</a></li>
+                        <li><a href="./contact.html">Contact Me</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div>
-                <button class="btn-primary">Contact Me</button>
+                <button class="btn-primary"><a id="btn-primary" href="./book-a-consultation.html">Book a Consultation</a></button>
             </div>
         </header>
     
 
     <div class="grid-container">
-        <section>
+        <section class="grid-section">
             <div class="my-journey">
                     <h3>My Journey</h3>
 
@@ -54,7 +56,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="grid-section">
             <div class="my-approach">
                     <h3>My Development Philosophy</h3>
 
@@ -67,7 +69,7 @@
             </div>
         </section>
         
-        <section>
+        <section class="grid-section">
             <div class="skills-tools">
                 <h3>My Skills & Tools</h3>
                     
@@ -82,25 +84,48 @@
     
     <section>
         <div class="all-projects">
-            <h3 class="role-header">Completed Projects</h3>
+            <h3 class="role-header">Completed Projects - Software Development</h3>
 
             <div class="grid-container-2">
                 <div>
                     <div>
-                        <h3>Freelance & Training Projects - Fullstack Web Applications </h3>
+                        <h3>Web Development Application Projects </h3>
 
-                        <h4><b>Role: </b>Developer & Designer</h4>
-                            <li>Built responsive portfolio and dashboard applications integrating backend databases.</li>
-                            <li>Prototyped features such as user authentication, content management, and dynamic dashboards.</li>
-                            <li>Applied R-Programming and Power BI for data-driven components.</li>
+                        <h4 class="my-role"><b>My Role: </b>Fullstack Software Developer</h4>
+                            <li>Developed responsive web applications, including a personal portfolio and interactive dashboards, integrating frontend frameworks with backend databases.</li>
+                            <li>Prototyped and implemented key features such as user authentication, content management systems, and dynamic data visualizations.</li>
+                            <li>Utilized technologies including HTML, CSS, JavaScript, Node.js, PostgreSQL, and RESTful APIs to ensure performance, scalability, and maintainability.</li>
                     </div>
 
                     <div>
-                        <h4>Examples</h4>
-                            <li>Personal project: Portfolio website using HTML/CSS/JS with clean component-based architecture.</li>
-                            <li>Training project: Fullstack learning management simulation using PostgreSQL and Node.js.</li>
+                        <h4 class="project-outcome">Project Outcome</h4>
+                            <p>Delivered a professional-grade personal portfolio website using HTML/CSS/JavaScript with a clean, modular 
+                                architecture optimized for usability and performance. In a full-stack training simulation, built a functional library
+                                system with MongoDB and Node.js, enabling real-time content updates, secure user access, and dynamic dashboards. The projects 
+                                demonstrated strong proficiency in both frontend and backend development, and resulted in faster deployment times, improved UI 
+                                responsiveness, and robust data handling capabilities. These applications served as effective showcases for core software engineering
+                                 skills and practical use of analytics tools.</p>
                     </div>
                 </div>   
+
+                <div>
+                    <div>
+                        <h3>Client Website Development Projects </h3>
+
+                        <h4 class="my-role"><b>My Role: </b>Software Developer</h4>
+                            <li>Collaborated closely with the client to define website goals, target audience, and content strategy.</li>
+                            <li>Designed the website layout and user interface with a focus on brand consistency, accessibility, and responsiveness across devices.</li>
+                            <li>Developed and deployed the website using HTML, CSS, JavaScript, ensuring cross-browser compatibility and optimized load performance.</li>
+                    </div>
+
+                    <div>
+                        <h4 class="project-outcome">Project Outcome</h4>
+                            <p>Successfully launched a fully responsive and visually appealing website that aligned with the client’s brand and business objectives. 
+                                The project resulted in an increase in web traffic and improved user engagement through intuitive navigation and mobile optimization. 
+                                Client feedback highlighted the improved professionalism and functionality of their online presence, supporting business growth and 
+                                customer acquisition.</p>
+                    </div>
+                </div>
             </div> 
         </div>
     </section>
@@ -108,17 +133,17 @@
     <footer>
         <div class="footer-grid">
             <div>
-                <p class="footer-text">© 2025 Patrick Edet Effiong Jay. All rights reserved.</p> 
+                <p class="footer-text">© 2025 PEEJ. All rights reserved.</p> 
             </div>
         
             <div class="social-media">
-                <a href="https://www.facebook.com/login.php/" target="_blank" class="fa fa-linkedin"></a> 
-                <a href="https://x.com/i/flow/login" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/patrick-edet-482837189/" target="_blank" class="fa fa-linkedin"></a> 
+                <a href="https://github.com/patrick-edet" target="_blank" class="fa fa-github"></a>
             </div>
 
             <div>
                 <p>
-                    Developed & Managed by PEEJ 
+                    Developed & Managed by <a href="http://www.patrickedet.com/" target="_blank">PEEJ </a>
                 </p>
             </div>
         </div>
