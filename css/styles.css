@@ -56,50 +56,93 @@ ul li a:hover {
 }
 
 /* Basic navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
+}
+
 .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .navbar li {
-  position: relative;
+    position: relative;
 }
 
 /* Hide dropdown by default */
 .navbar .dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px #00000033;
-  min-width: 200px;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: none;
-  border: none; 
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px #00000033;
+    min-width: 200px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    border: none;
 }
 
 /* Style dropdown items */
 .navbar .dropdown li {
-  width: 100%;
+    width: 100%;
 }
 
 .navbar .dropdown a {
-  display: block;
-  padding: 12px 16px;
-  text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
 }
 
 .navbar .dropdown a:hover {
-  background-color: #23364b;
+    background-color: #23364b;
 }
 
 /* Show dropdown on hover */
 .navbar li:hover > .dropdown {
-  display: block;
+    display: block;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 1rem;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Prevent hover dropdown on mobile */
+    .navbar li:hover > .dropdown {
+        display: none;
+    }
+
+    .navbar li.open > .dropdown {
+        display: block;
+        position: relative;
+    }
 }
 
 .btn-primary {
@@ -420,3 +463,4 @@ form {
 
 
 
+/*NAVBAR RESPONSIVENESS */
