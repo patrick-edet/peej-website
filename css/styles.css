@@ -8,9 +8,9 @@
 }
 
 body{
-    font-family: "Quintessential", serif;
+    font-family: "Crimson Pro", sans-serif;
     color: white;
-    background-color: #002147;
+    background-color: #262626;
     font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 
@@ -18,11 +18,17 @@ body{
 /*HEADER DESIGN */
 
 header {
-    background-color: #002147;
+    background-color: #262626;
     padding: 1rem 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo{
+    border-color: #E7E6E6;
+    border-style: double;
+    padding: 1rem; 
 }
 
 h1{
@@ -47,10 +53,11 @@ nav ul {
 
 nav ul li {
     font-weight: 600;
+    background-color: #262626;
 }
 
 ul li a:hover {
-    color: #d2b48c;
+    color: #9d9999;
     text-decoration: underline;
     transition: width 0.3s ease;
 }
@@ -102,7 +109,7 @@ ul li a:hover {
 }
 
 .navbar .dropdown a:hover {
-    background-color: #23364b;
+    background-color: #262626;
 }
 
 /* Show dropdown on hover */
@@ -146,13 +153,13 @@ ul li a:hover {
 }
 
 .btn-primary {
-    background: #d2b48c;
-    color: #002147;
+    background: #E7E6E6;
+    color: #262626;
     border: none;
     padding: 0.5rem 2.0vw;
     border-radius: 25px;
     cursor: pointer;
-    font-family: "Quintessential", serif;
+    font-family: "Crimson Pro", sans-serif;
     font-weight: 600;
     font-size: 1rem;
     transition: background 0.3s ease;
@@ -160,11 +167,11 @@ ul li a:hover {
 }
 
 #btn-primary{
-    color: #002147;
+    color: #262626;
 }
 
 .btn-primary:hover {
-    background: #8f7553;
+    background: #9d9999;
 }
 
 .grid-images{
@@ -173,7 +180,7 @@ ul li a:hover {
 
 section{
     background-color:white;
-    color: #d2b48c;
+    color: #262626;
 }
 
 
@@ -185,15 +192,22 @@ footer{
     padding-bottom: 0.5rem;
     font-size: 1em;
     color: grey;
-    font-weight: bold;
     text-align: center;
 }
 
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2.5rem;
+    gap: 0.5rem;
     padding: 1rem 5vw;
+}
+
+.footer-text{
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1rem;
+    color: rgb(207, 195, 195);
+    padding: 0;
 }
 
 .social-media{
@@ -214,10 +228,6 @@ footer{
     color: white;
 }
   
-.fa-github{
-    background: black;
-    color: white;
-}
 
 
 
@@ -227,9 +237,9 @@ footer{
     background-color: #ebdac5;
     background-blend-mode: darken;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url("../images/DSCF2585-Ultra.JPG") top/contain no-repeat;
-    max-height: 600px;    
-    min-height: 300px;
+              url("../images/DSCF2585.JPG") top/contain no-repeat;
+    max-width: 100%;
+    max-height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,6 +248,7 @@ footer{
 }
 
 .hero-text{
+    color: #bfbcbc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,12 +263,18 @@ footer{
 .slogan{
     padding: 1rem 5vw;
     background-color: white;
-    color: #002147;
+    color: #262626;
     text-align: center;
     line-height: 30px;
 }
 
-.grid-container{
+.slogan-aboutme{
+    padding: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.grid-container-main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
@@ -270,13 +287,19 @@ footer{
     height: 200px;
 }
 
+.list{
+    text-align: left;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
 #btn-secondary{
-    color: #002147;
+    color: #262626;
 }
 
 .slogan,
 .grid-container{
-    background-color: lightgray;
+    background-color: white;
 }
 
 
@@ -292,26 +315,28 @@ footer{
 
 .role-header{
     font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 0;
 }
 
 .grid-section{
-    border-radius: 12px;
-    background-color: #002147;
+    background-color: #E7E6E6;
+    color: #262626;
 }
 
 .all-projects{
-    background-color: #d2b48c;
-    color: #002147;
+    background-color: #E7E6E6;
+    color: #262626;
 }
 
-.grid-container-2{
+/*.grid-container-2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 4rem;
     padding: 1rem 5vw;
     align-items: top;
     text-align: center;
-}
+}*/
 
 .my-role{
     padding-bottom: 1rem;
@@ -323,22 +348,27 @@ footer{
 
 
 
-/* ABOUT ME PAGE */
+/* EDUCATION PAGE */
 .about-me-history,
 .about-me-ethics{
     padding: 1rem 5vw;
     padding-bottom: 2rem;
 }
 
+.education-icon{
+    max-width: 100%;
+    height: auto;
+}
+
 .slogan-aboutme{
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 
 /* FORM DESIGN */
 .contact-form{
-    background-color: #d2b48c;
-    color: #002147;
+    background-color: white;
+    color: #262626;
     padding-bottom: 1rem;
 }
 
@@ -368,7 +398,7 @@ footer{
 }
 
 .contact-form-cta{
-    color: #002147;
+    color: #262626;
     padding-top: 1.0rem;
     padding-bottom: 1.75rem;
 }
@@ -389,7 +419,7 @@ form {
     background: #f4f4f4;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: "Quintessential", serif;
+    font-family: "Crimson Pro", sans-serif;
   }
   
   /* Label styling */
@@ -397,7 +427,7 @@ form {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #002147;
+    color: #262626;
     gap: 10px;
   }
   
@@ -429,21 +459,21 @@ form {
   }
 
   option{
-    font-family: "Quintessential", serif;
+    font-family: "Crimson Pro", sans-serif;
     font-size: 1.0rem;
-    color: #002147;
+    color: #262626;
   }
 
   form input:focus,
   form textarea:focus {
-    border-color: #002147;
+    border-color: #262626;
     outline: none;
   }
   
   /* Submit button */
   form button[type="submit"],
   form button[type="reset"]{
-    background-color: #d2b48c;
+    background-color: #262626;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -454,13 +484,10 @@ form {
   }
   
   form button[type="submit"]:hover {
-    background-color: #8f7553;
+    background-color: #6b6868;
   }
 
   form button[type="reset"]:hover {
-    background-color: #8f7553;
+    background-color: #6b6868;
   }
 
-
-
-/*NAVBAR RESPONSIVENESS */
