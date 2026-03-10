@@ -79,6 +79,12 @@ ul li a:hover {
     gap: 20px;
 }
 
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
 .navbar li {
     position: relative;
 }
@@ -112,12 +118,27 @@ ul li a:hover {
     background-color: #262626;
 }
 
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Dropdown hidden by default */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+}
+
 /* Show dropdown on hover */
 .navbar li:hover > .dropdown {
     display: block;
 }
 
-/* Hamburger icon */
+/* Hamburger */
 .hamburger {
     display: none;
     font-size: 26px;
@@ -126,14 +147,14 @@ ul li a:hover {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .navbar ul {
+
+    .menu {
         flex-direction: column;
         width: 100%;
         display: none;
-        margin-top: 1rem;
     }
 
-    .navbar ul.active {
+    .menu.active {
         display: flex;
     }
 
@@ -141,11 +162,12 @@ ul li a:hover {
         display: block;
     }
 
-    /* Prevent hover dropdown on mobile */
+    /* Disable hover on mobile */
     .navbar li:hover > .dropdown {
         display: none;
     }
 
+    /* JS opens dropdown */
     .navbar li.open > .dropdown {
         display: block;
         position: relative;
@@ -198,7 +220,7 @@ footer{
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 1rem 5vw;
 }
 
